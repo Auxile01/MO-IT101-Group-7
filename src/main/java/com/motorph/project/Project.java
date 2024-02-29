@@ -84,6 +84,7 @@ class Employee {
         DecimalFormat decimalFormat = new DecimalFormat("0.00");
 
         // In the calculateNetWeeklySalary() method
+        System.out.println("DEDUCTIONS: \n");
         System.out.println("SSS Contribution: PHP" + decimalFormat.format(sssContribution));
         System.out.println("PAGIBIG Contribution: PHP" + decimalFormat.format(pagibigContribution));
         System.out.println("PHILHEALTH Contribution: PHP" + decimalFormat.format(philhealthContribution));
@@ -275,7 +276,7 @@ public class Project {
         Scanner scanner = new Scanner(System.in);
         DecimalFormat decimalFormat = new DecimalFormat("0.00");
         
-        System.out.print("Welcome!\n");
+        System.out.print("\n Welcome!\n");
         System.out.print("Enter employee number: ");
         String employeeNumber = scanner.nextLine();
 
@@ -296,7 +297,7 @@ public class Project {
             double netWeeklySalary = employee.calculateNetWeeklySalary();
             
             
-            
+            System.out.println("\n SALARY:\n");
             System.out.println("Gross Weekly Salary: PHP" + decimalFormat.format(grossWeeklySalary));
             System.out.println("Net Weekly Salary: PHP" + decimalFormat.format(netWeeklySalary));
         } else {
